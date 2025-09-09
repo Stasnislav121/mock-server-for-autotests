@@ -1,2 +1,4 @@
 # mock-server-for-autotests
-Мок-сервер для API-автотестов
+Мок-сервер на FastAPI для API-автотестов
+
+Пока реализовано 2 ручки + health_check
