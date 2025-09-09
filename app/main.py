@@ -6,6 +6,11 @@ from fastapi import FastAPI, status, Response
 app = FastAPI()
 
 
+@app.get('/health')
+async def health_check() -> dict:
+    return {'status': 'healthy', 'message': 'Server is running'}
+
+
 packs = {
     "data": {
         "boxes": [{
